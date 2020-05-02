@@ -1,0 +1,110 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://Script/Area_behind_pfeilgehen.gd" type="Script" id=1]
+[ext_resource path="res://Script/pfeil.gd" type="Script" id=2]
+[ext_resource path="res://UI/laufensymbol.png" type="Texture" id=3]
+[ext_resource path="res://Script/Symbol.gd" type="Script" id=4]
+[ext_resource path="res://Script/Pfeilgehen.gd" type="Script" id=5]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben1.png" type="Texture" id=6]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben2.png" type="Texture" id=7]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben3.png" type="Texture" id=8]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben4.png" type="Texture" id=9]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben5.png" type="Texture" id=10]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben6.png" type="Texture" id=11]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben7.png" type="Texture" id=12]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben8.png" type="Texture" id=13]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben9.png" type="Texture" id=14]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben10.png" type="Texture" id=15]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben11.png" type="Texture" id=16]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben12.png" type="Texture" id=17]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben13.png" type="Texture" id=18]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben14.png" type="Texture" id=19]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben15.png" type="Texture" id=20]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben16.png" type="Texture" id=21]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben17.png" type="Texture" id=22]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben18.png" type="Texture" id=23]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben19.png" type="Texture" id=24]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben20.png" type="Texture" id=25]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben21.png" type="Texture" id=26]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben22.png" type="Texture" id=27]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben23.png" type="Texture" id=28]
+[ext_resource path="res://UI/Pfeile/Pfeil oben/pfeil oben24.png" type="Texture" id=29]
+[ext_resource path="res://Audio/Geräusche/Laufen/walking stein.wav" type="AudioStream" id=30]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1230.74, 671.024 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 100.829
+height = 17.518
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Laufen zeug" type="Node"]
+
+[node name="Area_behind_pfeilgehen" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 14.1422, -8.48529 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_behind_pfeilgehen"]
+position = Vector2( 970.152, 593.97 )
+shape = SubResource( 1 )
+
+[node name="pfeil" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 132.936, 948.938 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Symbol" type="Sprite" parent="pfeil"]
+scale = Vector2( 1.00523, 1 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+mouse_over = Color( 1, 0, 0, 1 )
+mouse_out = Color( 1, 1, 1, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pfeil"]
+position = Vector2( -2.82849, 2.82837 )
+rotation = 2.337
+shape = SubResource( 2 )
+
+[node name="Pfeilgehen" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 1524.52, 188.091 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Pfeilgehen"]
+position = Vector2( 7.07117, -15.5564 )
+polygon = PoolVector2Array( 99.0494, 65.0245, -8.43097, -65.0833, -110.254, 65.0245 )
+
+[node name="Pfeil2" type="AnimatedSprite" parent="Pfeilgehen"]
+position = Vector2( 1.41431, 2.82843 )
+frames = SubResource( 3 )
+frame = 1
+speed_scale = 3.0
+playing = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Pfeilgehen"]
+stream = ExtResource( 30 )
+volume_db = 3.059
+[connection signal="input_event" from="Area_behind_pfeilgehen" to="pfeil" method="_on_Area_behind_pfeilgehen_input_event"]
+[connection signal="input_event" from="pfeil" to="Area_behind_pfeilgehen" method="_on_pfeil_input_event"]
+[connection signal="input_event" from="pfeil" to="pfeil" method="_on_pfeil_input_event"]
+[connection signal="input_event" from="pfeil" to="Pfeilgehen" method="_on_pfeil_input_event"]
+[connection signal="mouse_entered" from="pfeil" to="pfeil/Symbol" method="_on_pfeil_mouse_entered"]
+[connection signal="mouse_exited" from="pfeil" to="pfeil/Symbol" method="_on_pfeil_mouse_exited"]
+[connection signal="input_event" from="Pfeilgehen" to="Pfeilgehen" method="_on_Pfeilgehen_input_event"]
+[connection signal="mouse_entered" from="Pfeilgehen" to="Area_behind_pfeilgehen" method="_on_Pfeilgehen_mouse_entered"]
+[connection signal="mouse_exited" from="Pfeilgehen" to="Area_behind_pfeilgehen" method="_on_Pfeilgehen_mouse_exited"]
