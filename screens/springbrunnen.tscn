@@ -1,0 +1,161 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://brunnen/brunnen_0000.png" type="Texture" id=1]
+[ext_resource path="res://brunnen/brunnen_0001.png" type="Texture" id=2]
+[ext_resource path="res://brunnen/brunnen_0002.png" type="Texture" id=3]
+[ext_resource path="res://brunnen/brunnen_0003.png" type="Texture" id=4]
+[ext_resource path="res://polizist/polizist_0000.png" type="Texture" id=5]
+[ext_resource path="res://polizist/polizist_0001.png" type="Texture" id=6]
+[ext_resource path="res://polizist/polizist_0002.png" type="Texture" id=7]
+[ext_resource path="res://polizist/polizist_0003.png" type="Texture" id=8]
+[ext_resource path="res://polizist/polizist_0004.png" type="Texture" id=9]
+[ext_resource path="res://polizist/polizist_0005.png" type="Texture" id=10]
+[ext_resource path="res://polizist/polizist_0006.png" type="Texture" id=11]
+[ext_resource path="res://polizist/polizist_0007.png" type="Texture" id=12]
+[ext_resource path="res://polizist/polizist_0008.png" type="Texture" id=13]
+[ext_resource path="res://polizist/polizist_0009.png" type="Texture" id=14]
+[ext_resource path="res://polizist/polizist_0010.png" type="Texture" id=15]
+[ext_resource path="res://polizist/polizist_0011.png" type="Texture" id=16]
+[ext_resource path="res://polizist/polizist_0012.png" type="Texture" id=17]
+[ext_resource path="res://polizist/polizist_0013.png" type="Texture" id=18]
+[ext_resource path="res://polizist/polizist_0014.png" type="Texture" id=19]
+[ext_resource path="res://polizist/polizist_0015.png" type="Texture" id=20]
+[ext_resource path="res://polizist/polizist_0016.png" type="Texture" id=21]
+[ext_resource path="res://polizist/polizist_0017.png" type="Texture" id=22]
+[ext_resource path="res://polizist/polizist_0018.png" type="Texture" id=23]
+[ext_resource path="res://polizist/polizist_0019.png" type="Texture" id=24]
+[ext_resource path="res://polizist/polizist_0020.png" type="Texture" id=25]
+[ext_resource path="res://polizist/polizist_0021.png" type="Texture" id=26]
+[ext_resource path="res://polizist/polizist_0022.png" type="Texture" id=27]
+[ext_resource path="res://polizist/polizist_0023.png" type="Texture" id=28]
+[ext_resource path="res://polizist/polizist_0024.png" type="Texture" id=29]
+[ext_resource path="res://polizist/polizist_0025.png" type="Texture" id=30]
+[ext_resource path="res://polizist/polizist_0026.png" type="Texture" id=31]
+[ext_resource path="res://polizist/polizist_0027.png" type="Texture" id=32]
+[ext_resource path="res://polizist/polizist_0028.png" type="Texture" id=33]
+[ext_resource path="res://polizist/polizist_0029.png" type="Texture" id=34]
+[ext_resource path="res://polizist/polizist_0030.png" type="Texture" id=35]
+[ext_resource path="res://polizist/polizist_0031.png" type="Texture" id=36]
+[ext_resource path="res://polizist/polizist_0032.png" type="Texture" id=37]
+[ext_resource path="res://polizist/polizist_0033.png" type="Texture" id=38]
+[ext_resource path="res://polizist/polizist_0034.png" type="Texture" id=39]
+[ext_resource path="res://polizist/polizist_0035.png" type="Texture" id=40]
+[ext_resource path="res://polizist/polizist_0036.png" type="Texture" id=41]
+[ext_resource path="res://polizist/polizist_0037.png" type="Texture" id=42]
+[ext_resource path="res://polizist/polizist_0038.png" type="Texture" id=43]
+[ext_resource path="res://polizist/polizist_0039.png" type="Texture" id=44]
+[ext_resource path="res://Script/area_friedhof.gd" type="Script" id=45]
+[ext_resource path="res://Script/area_brunnen.gd" type="Script" id=46]
+[ext_resource path="res://Script/area_büsche.gd" type="Script" id=47]
+[ext_resource path="res://Script/area_polizist.gd" type="Script" id=48]
+[ext_resource path="res://Script/area_ausweis_bush.gd" type="Script" id=49]
+[ext_resource path="res://brunnen/ausweis.png" type="Texture" id=50]
+[ext_resource path="res://Singleton/laufen.tscn" type="PackedScene" id=51]
+[ext_resource path="res://Script/TextMouse.tscn" type="PackedScene" id=52]
+[ext_resource path="res://Script/TextMouseBrunnen.gd" type="Script" id=53]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="ArrayMesh" id=3]
+surfaces/0 = {
+"aabb": AABB( 419, 197.9, 0, 74, 77.4, 0 ),
+"array_data": PoolByteArray( 0, 128, 243, 67, 152, 25, 71, 67, 239, 238, 64, 63, 174, 49, 47, 63, 0, 128, 243, 67, 204, 204, 72, 67, 239, 238, 64, 63, 215, 152, 47, 63, 0, 128, 246, 67, 204, 204, 75, 67, 188, 187, 65, 63, 227, 78, 48, 63, 0, 128, 246, 67, 152, 25, 79, 67, 188, 187, 65, 63, 34, 23, 49, 63, 104, 230, 244, 67, 0, 0, 113, 67, 130, 78, 65, 63, 61, 32, 57, 63, 204, 12, 244, 67, 0, 0, 113, 67, 123, 20, 65, 63, 61, 32, 57, 63, 204, 12, 243, 67, 0, 0, 116, 67, 54, 208, 64, 63, 72, 214, 57, 63, 104, 38, 241, 67, 0, 0, 116, 67, 130, 78, 64, 63, 72, 214, 57, 63, 104, 166, 238, 67, 0, 0, 112, 67, 215, 163, 63, 63, 142, 227, 56, 63, 104, 102, 236, 67, 0, 0, 116, 67, 62, 10, 63, 63, 72, 214, 57, 63, 104, 102, 231, 67, 0, 0, 116, 67, 233, 180, 61, 63, 72, 214, 57, 63, 0, 192, 227, 67, 104, 102, 114, 67, 188, 187, 60, 63, 49, 117, 57, 63, 104, 38, 224, 67, 0, 0, 129, 67, 250, 197, 59, 63, 210, 39, 61, 63, 0, 128, 223, 67, 0, 0, 129, 67, 154, 153, 59, 63, 210, 39, 61, 63, 0, 0, 218, 67, 0, 128, 136, 67, 34, 34, 58, 63, 11, 182, 64, 63, 0, 64, 216, 67, 0, 128, 136, 67, 171, 170, 57, 63, 11, 182, 64, 63, 0, 0, 215, 67, 154, 217, 135, 67, 85, 85, 57, 63, 41, 103, 64, 63, 0, 0, 212, 67, 102, 166, 137, 67, 137, 136, 56, 63, 156, 65, 65, 63, 0, 0, 211, 67, 154, 25, 137, 67, 68, 68, 56, 63, 221, 254, 64, 63, 0, 0, 211, 67, 204, 140, 136, 67, 68, 68, 56, 63, 28, 188, 64, 63, 0, 128, 209, 67, 204, 140, 135, 67, 222, 221, 55, 63, 192, 66, 64, 63, 0, 128, 209, 67, 0, 128, 130, 67, 222, 221, 55, 63, 222, 221, 61, 63, 52, 51, 210, 67, 0, 128, 130, 67, 167, 13, 56, 63, 222, 221, 61, 63, 52, 51, 216, 67, 0, 0, 79, 67, 65, 167, 57, 63, 17, 17, 49, 63, 204, 12, 217, 67, 0, 0, 79, 67, 71, 225, 57, 63, 17, 17, 49, 63, 204, 140, 219, 67, 0, 0, 73, 67, 242, 139, 58, 63, 250, 164, 47, 63, 104, 102, 222, 67, 0, 0, 73, 67, 130, 78, 59, 63, 250, 164, 47, 63, 0, 128, 230, 67, 52, 51, 71, 67, 119, 119, 61, 63, 192, 55, 47, 63, 0, 128, 230, 67, 104, 230, 69, 67, 119, 119, 61, 63, 222, 232, 46, 63 ),
+"array_index_data": PoolByteArray( 28, 0, 0, 0, 1, 0, 1, 0, 2, 0, 3, 0, 3, 0, 4, 0, 5, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 24, 0, 25, 0, 26, 0, 27, 0, 28, 0, 1, 0, 1, 0, 3, 0, 5, 0, 5, 0, 7, 0, 8, 0, 8, 0, 10, 0, 11, 0, 11, 0, 13, 0, 15, 0, 16, 0, 18, 0, 19, 0, 19, 0, 21, 0, 22, 0, 22, 0, 24, 0, 26, 0, 26, 0, 27, 0, 1, 0, 1, 0, 5, 0, 8, 0, 11, 0, 15, 0, 16, 0, 16, 0, 19, 0, 22, 0, 22, 0, 26, 0, 1, 0, 1, 0, 8, 0, 11, 0, 11, 0, 16, 0, 22, 0, 22, 0, 1, 0, 11, 0 ),
+"blend_shape_data": [  ],
+"format": 262417,
+"index_count": 81,
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 29
+}
+
+[node name="springbrunnen" type="Node"]
+
+[node name="anim_springbrunnen" type="AnimatedSprite" parent="."]
+position = Vector2( 961.665, 537.401 )
+frames = SubResource( 1 )
+frame = 2
+speed_scale = 0.5
+playing = true
+
+[node name="anim_polizist" type="AnimatedSprite" parent="."]
+position = Vector2( 959.49, 541.514 )
+frames = SubResource( 2 )
+animation = "New Anim"
+frame = 31
+playing = true
+
+[node name="area_friedhof" type="Area2D" parent="."]
+editor/display_folded = true
+script = ExtResource( 45 )
+
+[node name="collision_friedhof" type="CollisionPolygon2D" parent="area_friedhof"]
+position = Vector2( 172.534, 147.078 )
+polygon = PoolVector2Array( 94.5143, 239.782, 267.049, 242.611, 334.931, 157.758, 682.828, 169.071, 764.852, 33.3067, 278.362, 33.3067, 247.25, -71.3452, 142.598, -77.002, 91.6859, 21.993, -168.53, 53.1057, -202.471, 149.272 )
+
+[node name="area_brunnen" type="Area2D" parent="."]
+script = ExtResource( 46 )
+
+[node name="collision_brunnen" type="CollisionPolygon2D" parent="area_brunnen"]
+position = Vector2( 1187.94, 455.377 )
+polygon = PoolVector2Array( -111.936, -10.3751, -113.936, 192.425, 131.284, 225.64, 431.098, 183.214, 439.583, 21.993, 247.25, -45.8893, 241.593, -241.051, 88.8575, -334.389, -44.0787, -255.193, -49.7356, -26.0903 )
+
+[node name="area_bsche" type="Area2D" parent="."]
+script = ExtResource( 47 )
+
+[node name="collision_büsche" type="CollisionPolygon2D" parent="area_bsche"]
+position = Vector2( 1098.12, 918.897 )
+polygon = PoolVector2Array( -834.118, 174.906, -1144.34, 268.067, 894.96, 265.238, 958.883, -419.242, 862.716, -419.242, 353.599, -26.0903, 365.884, -131.094, 429.884, -131.094, 407.339, 101.189, 858.191, -430.556, 712.685, -381.495, 633.613, -255.193, 465.885, -237.095, 361.884, -217.095, 231.884, -189.095, 113.884, -65.0944, 66.2301, 19.1646, -30.1165, 88.9059, -134.117, 44.9058, -218.117, 80.9059, -267.525, 217.155, -426.117, 170.906, -526.117, 52.9058, -743.318, 28.106 )
+
+[node name="area_polizist" type="Area2D" parent="."]
+script = ExtResource( 48 )
+
+[node name="collision_polizist" type="CollisionPolygon2D" parent="area_polizist"]
+position = Vector2( 808.931, 466.691 )
+polygon = PoolVector2Array( 165.225, -246.708, 190.681, 307.664, 162.397, 358.576, 284.019, 352.919, 247.25, 316.15, 264.22, -238.223 )
+
+[node name="area_ausweis_bush" type="Area2D" parent="."]
+show_behind_parent = true
+script = ExtResource( 49 )
+
+[node name="mesh_ausweis" type="MeshInstance2D" parent="area_ausweis_bush"]
+position = Vector2( 1029.55, 588.313 )
+mesh = SubResource( 3 )
+texture = ExtResource( 50 )
+
+[node name="collision_ausweis" type="CollisionPolygon2D" parent="area_ausweis_bush"]
+position = Vector2( 1387.35, 797.617 )
+polygon = PoolVector2Array( 82.4653, -6.05786, 63.7981, 68.6128, 123.195, 31.8432, 133.095, -4.92639 )
+
+[node name="Laufen zeug" parent="." instance=ExtResource( 51 )]
+
+[node name="TextMouse" parent="." instance=ExtResource( 52 )]
+script = ExtResource( 53 )
+[connection signal="input_event" from="area_friedhof" to="area_friedhof" method="_on_area_friedhof_input_event"]
+[connection signal="mouse_entered" from="area_friedhof" to="TextMouse" method="_on_area_friedhof_mouse_entered"]
+[connection signal="mouse_exited" from="area_friedhof" to="TextMouse" method="_on_area_friedhof_mouse_exited"]
+[connection signal="input_event" from="area_brunnen" to="area_brunnen" method="_on_area_brunnen_input_event"]
+[connection signal="mouse_entered" from="area_brunnen" to="TextMouse" method="_on_area_brunnen_mouse_entered"]
+[connection signal="mouse_exited" from="area_brunnen" to="TextMouse" method="_on_area_brunnen_mouse_exited"]
+[connection signal="input_event" from="area_bsche" to="area_bsche" method="_on_area_bsche_input_event"]
+[connection signal="mouse_entered" from="area_bsche" to="TextMouse" method="_on_area_bsche_mouse_entered"]
+[connection signal="mouse_exited" from="area_bsche" to="TextMouse" method="_on_area_bsche_mouse_exited"]
+[connection signal="mouse_entered" from="area_polizist" to="TextMouse" method="_on_area_polizist_mouse_entered"]
+[connection signal="mouse_exited" from="area_polizist" to="TextMouse" method="_on_area_polizist_mouse_exited"]
+[connection signal="input_event" from="area_ausweis_bush" to="area_ausweis_bush" method="_on_area_ausweis_bush_input_event"]
+[connection signal="mouse_entered" from="area_ausweis_bush" to="TextMouse" method="_on_area_ausweis_bush_mouse_entered"]
+[connection signal="mouse_exited" from="area_ausweis_bush" to="TextMouse" method="_on_area_ausweis_bush_mouse_exited"]

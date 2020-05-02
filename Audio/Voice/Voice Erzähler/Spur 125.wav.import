@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Spur 125.wav-432707f297c0ba9713f789ec880e2d76.sample"
+
+[deps]
+
+source_file="res://Audio/Voice/Voice Erzähler/Spur 125.wav"
+dest_files=[ "res://.import/Spur 125.wav-432707f297c0ba9713f789ec880e2d76.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
