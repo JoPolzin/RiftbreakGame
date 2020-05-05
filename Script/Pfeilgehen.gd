@@ -24,3 +24,8 @@ func _on_Pfeilgehen_input_event(viewport, event, shape_idx): #wenn auf pfeilgehe
 			$"/root/Variables"._setScene("res://screens/springbrunnen.tscn") #nächste szene
 			#eigl will ich den szenenwechsel anders haben, damit man das leichter austauschen kann
 
+
+
+func _on_Area_behind_pfeilgehen_input_event(viewport, event, shape_idx):
+	if event.is_pressed() and event.button_index == BUTTON_LEFT:
+		hide()

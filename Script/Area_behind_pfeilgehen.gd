@@ -18,3 +18,8 @@ func _on_Pfeilgehen_mouse_entered():
 
 func _on_Pfeilgehen_mouse_exited():
 	show()
+
+
+func _on_Area_behind_pfeilgehen_input_event(viewport, event, shape_idx):
+	if event.is_pressed() and event.button_index == BUTTON_LEFT:
+		hide()

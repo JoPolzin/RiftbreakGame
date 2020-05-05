@@ -96,7 +96,7 @@ playing = true
 position = Vector2( 959.49, 541.514 )
 frames = SubResource( 2 )
 animation = "New Anim"
-frame = 31
+frame = 24
 playing = true
 
 [node name="area_friedhof" type="Area2D" parent="."]

@@ -58,7 +58,6 @@ position = Vector2( 970.152, 593.97 )
 shape = SubResource( 1 )
 
 [node name="pfeil" type="Area2D" parent="."]
-editor/display_folded = true
 position = Vector2( 132.936, 948.938 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -92,17 +91,19 @@ polygon = PoolVector2Array( 99.0494, 65.0245, -8.43097, -65.0833, -110.254, 65.0
 [node name="Pfeil2" type="AnimatedSprite" parent="Pfeilgehen"]
 position = Vector2( 1.41431, 2.82843 )
 frames = SubResource( 3 )
-frame = 1
+frame = 21
 speed_scale = 3.0
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Pfeilgehen"]
 stream = ExtResource( 30 )
 volume_db = 3.059
+[connection signal="input_event" from="Area_behind_pfeilgehen" to="Pfeilgehen" method="_on_Area_behind_pfeilgehen_input_event"]
 [connection signal="input_event" from="Area_behind_pfeilgehen" to="pfeil" method="_on_Area_behind_pfeilgehen_input_event"]
-[connection signal="input_event" from="pfeil" to="Area_behind_pfeilgehen" method="_on_pfeil_input_event"]
-[connection signal="input_event" from="pfeil" to="pfeil" method="_on_pfeil_input_event"]
+[connection signal="input_event" from="Area_behind_pfeilgehen" to="Area_behind_pfeilgehen" method="_on_Area_behind_pfeilgehen_input_event"]
 [connection signal="input_event" from="pfeil" to="Pfeilgehen" method="_on_pfeil_input_event"]
+[connection signal="input_event" from="pfeil" to="pfeil" method="_on_pfeil_input_event"]
+[connection signal="input_event" from="pfeil" to="Area_behind_pfeilgehen" method="_on_pfeil_input_event"]
 [connection signal="mouse_entered" from="pfeil" to="pfeil/Symbol" method="_on_pfeil_mouse_entered"]
 [connection signal="mouse_exited" from="pfeil" to="pfeil/Symbol" method="_on_pfeil_mouse_exited"]
 [connection signal="input_event" from="Pfeilgehen" to="Pfeilgehen" method="_on_Pfeilgehen_input_event"]
